@@ -1,0 +1,53 @@
+#!/bin/sh
+
+
+CONFIG_FILE=$1
+CONFIG_EDITOR='vim'
+
+
+[ $CONFIG_FILE == 'bash' ] && $CONFIG_EDITOR $HOME/.bashrc
+
+# vim
+[ $CONFIG_FILE == 'vim' ] && $CONFIG_EDITOR $HOME/.vimrc
+[ $CONFIG_FILE == 'gvim' ] && $CONFIG_EDITOR $HOME/.gvimrc
+[ $CONFIG_FILE == 'ideavim' ] && $CONFIG_EDITOR $HOME/.ideavimrc
+[ $CONFIG_FILE == 'nvim' ] && $CONFIG_EDITOR $HOME/.config/nvim/init.vim
+
+
+# wm
+[ $CONFIG_FILE == 'i3' ] && $CONFIG_EDITOR $HOME/.config/i3/config
+[ $CONFIG_FILE == 'awesome' ] && $CONFIG_EDITOR $HOME/.config/awesome/rc.lua
+[ $CONFIG_FILE == 'bspwm' ] && $CONFIG_EDITOR $HOME/.config/bspwm/bspwmrc
+[ $CONFIG_FILE == 'leftwm' ] && $CONFIG_EDITOR $HOME/.config/leftwm/config.toml
+[ $CONFIG_FILE == 'openbox' ] && $CONFIG_EDITOR $HOME/.config/openbox/rc.xml
+
+
+# terminal
+[ $CONFIG_FILE == 'alacritty' ] && $CONFIG_EDITOR $HOME/.config/alacritty/alacritty.yml
+[ $CONFIG_FILE == 'alacritty' ] && $CONFIG_EDITOR $HOME/.config/alacritty/alacritty.yml
+[ $CONFIG_FILE == 'termite' ] && $CONFIG_EDITOR $HOME/.config/termite/config
+
+
+# shell
+[ $CONFIG_FILE == 'fish' ] && $CONFIG_EDITOR $HOME/.config/fish/config.fish
+
+
+# launcher
+[ $CONFIG_FILE == 'rofi' ] && $CONFIG_EDITOR $HOME/.config/rofi/config
+
+# bar
+[ $CONFIG_FILE == 'polybar' ] && $CONFIG_EDITOR $HOME/.config/polybar/config
+[ $CONFIG_FILE == 'tint2' ] && $CONFIG_EDITOR $HOME/.config/tint2/tint2rc
+[ $CONFIG_FILE == 'xmonbar' ] && $CONFIG_EDITOR $HOME/.config/xmonbar/xmonbarrc
+
+
+# file manager
+[ $CONFIG_FILE == 'vifm' ] && $CONFIG_EDITOR $HOME/.config/vifm/vifmrc
+# [ $CONFIG_FILE == 'ranger' ] && $CONFIG_EDITOR $HOME/.config/ranger
+
+
+# others
+[ $CONFIG_FILE == 'nitrogen' ] && $CONFIG_EDITOR $HOME/.config/nitrogen/nitrogen.cfg
+[ $CONFIG_FILE == 'picom' ] && $CONFIG_EDITOR $HOME/.config/picom/picom.conf
+[ $CONFIG_FILE == 'ytfzf' ] && $CONFIG_EDITOR $HOME/.config/ytfzf/conf.sh
+
