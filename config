@@ -50,4 +50,5 @@ CONFIG_EDITOR='vim'
 [ $CONFIG_FILE == 'nitrogen' ] && $CONFIG_EDITOR $HOME/.config/nitrogen/nitrogen.cfg
 [ $CONFIG_FILE == 'picom' ] && $CONFIG_EDITOR $HOME/.config/picom/picom.conf
 [ $CONFIG_FILE == 'ytfzf' ] && $CONFIG_EDITOR $HOME/.config/ytfzf/conf.sh
+[ $CONFIG_FILE == 'tmux' ] && $CONFIG_EDITOR $HOME/.tmux.conf
 
